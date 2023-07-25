@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    margin: 0;
+        font-family: Arial, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+                grid-template-areas:
+                        "header"
+                                "main"
+                                        "footer";
+                                            grid-template-rows: auto 1fr auto;
+                                                min-height: 100vh;
+                                                }
+
+                                                /* Estilos para el Header */
+                                                .header {
+                                                    grid-area: header;
+                                                        background-color: #b2d8ff; /* Color azul pastel para el header */
+                                                            padding: 20px;
+                                                            }
+
+                                                            /* Estilos para el Main */
+                                                            .main {
+                                                                grid-area: main;
+                                                                    display: flex;
+                                                                    }
+
+                                                                    /* Estilos para el Aside */
+                                                                    .aside {
+                                                                        background-color: #b2ffff; /* Color celeste pastel para el aside */
+                                                                            padding: 20px;
+                                                                                display: flex;
+                                                                                    flex-direction: column;
+                                                                                    }
+
+                                                                                    .aside-title {
+                                                                                        font-weight: bold;
+                                                                                        }
+
+                                                                                        .aside-filters {
+                                                                                            list-style: none;
+                                                                                                padding: 0;
+                                                                                                    margin: 10px 0;
+                                                                                                    }
+
+                                                                                                    .aside-filters li {
+                                                                                                        cursor: pointer;
+                                                                                                        }
+
+                                                                                                        .aside-filters li:hover {
+                                                                                                            font-weight: bold;
+                                                                                                            }
+
+                                                                                                            /* Estilos para la grilla de productos */
+                                                                                                            .products-grid {
+                                                                                                                flex: 1;
+                                                                                                                    display: flex;
+                                                                                                                        flex-wrap: wrap;
+                                                                                                                            justify-content: space-evenly;
+                                                                                                                            }
+
+                                                                                                                            /* Estilos para el Footer */
+                                                                                                                            .footer {
+                                                                                                                                grid-area: footer;
+                                                                                                                                    background-color: #b2d8ff; /* Color azul pastel para el footer */
+                                                                                                                                        padding: 20px;
+                                                                                                                                        }
+                                                                                                                                        
