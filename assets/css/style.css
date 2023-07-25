@@ -1,70 +1,86 @@
 /* Estilos generales */
 body {
     margin: 0;
-        font-family: Arial, sans-serif;
-        }
+    font-family: Arial, sans-serif;
+}
 
-        .grid-container {
-            display: grid;
-                grid-template-areas:
-                        "header"
-                                "main"
-                                        "footer";
-                                            grid-template-rows: auto 1fr auto;
-                                                min-height: 100vh;
-                                                }
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
 
-                                                /* Estilos para el Header */
-                                                .header {
-                                                    grid-area: header;
-                                                        background-color: #b2d8ff; /* Color azul pastel para el header */
-                                                            padding: 20px;
-                                                            }
+/* Estilos para el Header */
+.header {
+    grid-area: header;
+    background-color: #B6FA71; /* Color azul pastel para el header */
+    padding: 20px;
+}
 
-                                                            /* Estilos para el Main */
-                                                            .main {
-                                                                grid-area: main;
-                                                                    display: flex;
-                                                                    }
+/* Estilos para el Main */
+.main {
+    grid-area: main;
+    background-color: #C2F0B3; /* Color de fondo del sector principal */
+    display: flex;
+}
 
-                                                                    /* Estilos para el Aside */
-                                                                    .aside {
-                                                                        background-color: #b2ffff; /* Color celeste pastel para el aside */
-                                                                            padding: 20px;
-                                                                                display: flex;
-                                                                                    flex-direction: column;
-                                                                                    }
+/* Estilos para el Aside */
+.aside {
+    background-color: #98EFA5; /* Color celeste pastel para el aside */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
-                                                                                    .aside-title {
-                                                                                        font-weight: bold;
-                                                                                        }
+.aside-title {
+    font-weight: bold;
+}
 
-                                                                                        .aside-filters {
-                                                                                            list-style: none;
-                                                                                                padding: 0;
-                                                                                                    margin: 10px 0;
-                                                                                                    }
+.aside-filters {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
 
-                                                                                                    .aside-filters li {
-                                                                                                        cursor: pointer;
-                                                                                                        }
+.aside-filters li {
+    cursor: pointer;
+}
 
-                                                                                                        .aside-filters li:hover {
-                                                                                                            font-weight: bold;
-                                                                                                            }
+.aside-filters li:hover {
+    font-weight: bold;
+}
 
-                                                                                                            /* Estilos para la grilla de productos */
-                                                                                                            .products-grid {
-                                                                                                                flex: 1;
-                                                                                                                    display: flex;
-                                                                                                                        flex-wrap: wrap;
-                                                                                                                            justify-content: space-evenly;
-                                                                                                                            }
+/* Estilos para la grilla de productos */
+.products-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
 
-                                                                                                                            /* Estilos para el Footer */
-                                                                                                                            .footer {
-                                                                                                                                grid-area: footer;
-                                                                                                                                    background-color: #b2d8ff; /* Color azul pastel para el footer */
-                                                                                                                                        padding: 20px;
-                                                                                                                                        }
-                                                                                                                                        
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px; /* Ajusta la altura de la imagen según lo que necesites */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Estilos para el Footer */
+.footer {
+    grid-area: footer;
+    background-color: #B6FA71; /* Color azul pastel para el footer */
+    padding: 20px;
+}
